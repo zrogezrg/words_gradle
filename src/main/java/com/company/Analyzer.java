@@ -2,15 +2,15 @@ package com.company;
 
 import java.io.*;
 
-public class Analyzer {
-	public static final int[] LETTER_COUNT = new int[ 26 ];
+class Analyzer {
+	static final int[] LETTER_COUNT = new int[ 26 ];
 
-	public static void startNewCount() {
+	static void startNewCount() {
 		for( int i = 0; i < LETTER_COUNT.length; i++ )
 			LETTER_COUNT[ i ] = 0;
 	}
 
-	public int[] analyze( char[] line ) throws IOException {
+	int[] analyze( char[] line ) {
 		int[] letterMarks = new int[ 26 ];
 		for( int j = 0; j < letterMarks.length; j++ )
 			letterMarks[ j ] = 0;

@@ -11,13 +11,8 @@ public class AnalyzerTest extends TestSuite {
 	public void test() {
 		Analyzer analyzer = new Analyzer();
 		Analyzer.startNewCount();
-		int[] result = new int[ 26 ];
-		try {
-			String input = "ALA MA KOTA KOT MA ALE";
-			result = analyzer.analyze( input.toCharArray() );
-		} catch( IOException e ) {
-			e.printStackTrace();
-		}
+		String input = "ALA MA KOTA KOT MA ALE";
+		int[] result = analyzer.analyze( input.toCharArray() );
 		Assert.assertEquals( 5, result[ 0 ] );
 	}
 }

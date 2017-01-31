@@ -3,9 +3,9 @@ package com.company;
 import java.io.*;
 import java.util.Scanner;
 
-class ReaderWriter {
+public class ReaderWriter {
 
-	static void process( String inputName, String outputName ) throws IOException {
+	public static void process( String inputName, String outputName ) throws IOException {
 
 		File file = new File( inputName );
 		Scanner sc = new Scanner( file );
@@ -25,7 +25,7 @@ class ReaderWriter {
 		printWriter.close();
 	}
 
-	static void printWords( String fileName, int wordCount, int max, int min ) throws IOException {
+	public static void printWords( String fileName, int wordCount, int max, int min ) throws IOException {
 
 		PrintWriter printWriter = new PrintWriter( fileName, "UTF-8" );
 		for( int i = 0; i < wordCount; i++ ) {

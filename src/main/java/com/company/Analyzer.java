@@ -1,16 +1,14 @@
 package com.company;
 
-import java.io.*;
+public class Analyzer {
+	public static final int[] LETTER_COUNT = new int[ 26 ];
 
-class Analyzer {
-	static final int[] LETTER_COUNT = new int[ 26 ];
-
-	static void startNewCount() {
+	public static void startNewCount() {
 		for( int i = 0; i < LETTER_COUNT.length; i++ )
 			LETTER_COUNT[ i ] = 0;
 	}
 
-	int[] analyze( char[] line ) {
+	public int[] analyze( char[] line ) {
 		int[] letterMarks = new int[ 26 ];
 		for( int j = 0; j < letterMarks.length; j++ )
 			letterMarks[ j ] = 0;

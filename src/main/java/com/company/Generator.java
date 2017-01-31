@@ -1,12 +1,10 @@
 package com.company;
 
-import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.Random;
 
-class Generator {
+public class Generator {
 
-	static char[] generate( int max, int min ) {
+	public static char[] generate( int max, int min ) {
 
 		Random random = new Random();
 		int length = random.nextInt( max - min + 1 ) + min;
